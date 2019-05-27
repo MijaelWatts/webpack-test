@@ -1,0 +1,5 @@
+#ignoring the node_modules downloaded with npm
+node_modules
+
+#ignoring the auto-generated file from package.json
+package-lock.json
