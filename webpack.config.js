@@ -4,9 +4,14 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 var ManifestPlugin = require('webpack-manifest-plugin');
 
 module.exports = {
+    mode: 'development',
     entry: {
         app: './src/index.js',
         print: './src/print.js'
+    },
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist'
     },
     plugins: [
         new ManifestPlugin(),
